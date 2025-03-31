@@ -1,10 +1,11 @@
-package com.refactorme.demo
+package com.refactorme.demo.ui
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.refactorme.demo.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val fragment = CountriesFragment("flag,name,latlng,languages,capital")
+        val fragment = CountriesFragment()
         supportFragmentManager.beginTransaction()
             .replace(R.id.container, fragment)
             .commit()

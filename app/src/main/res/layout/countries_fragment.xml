@@ -22,7 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="24dp"
-        android:text="Load"
-        />
+        android:text="Load"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

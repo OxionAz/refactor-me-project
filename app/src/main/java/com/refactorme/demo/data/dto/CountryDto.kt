@@ -1,4 +1,4 @@
-package com.refactorme.demo
+package com.refactorme.demo.data.dto
 
 data class Country(
     val name: CountryName,

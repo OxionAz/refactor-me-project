@@ -6,6 +6,7 @@ import com.refactorme.demo.data.repository.mockedCountriesList
 import com.refactorme.demo.domain.interactors.CountriesUseCase
 import com.refactorme.demo.ui.entities.ItemCountry
 import com.refactorme.demo.ui.mappers.ItemCountryMapper
+import com.refactorme.demo.ui.viewmodels.CountriesViewModel
 import com.refactorme.demo.utils.MainDispatcherRule
 import com.refactorme.demo.utils.testObserver
 import kotlinx.coroutines.ExperimentalCoroutinesApi

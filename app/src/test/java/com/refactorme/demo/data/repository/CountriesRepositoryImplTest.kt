@@ -12,6 +12,7 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.ResponseBody.Companion.toResponseBody
+import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -57,7 +58,7 @@ class CountriesRepositoryImplTest {
 
         // THEN
         Mockito.verify(api).getAllCountries(ALL_COUNTRIES_DEF_FIELDS)
-        assert(netResult.toString() == successNetResult.toString())
+        assertEquals(netResult.toString(), successNetResult.toString())
     }
 
     @Test
@@ -76,7 +77,7 @@ class CountriesRepositoryImplTest {
 
         // THEN
         Mockito.verify(api).getAllCountries(ALL_COUNTRIES_DEF_FIELDS)
-        assert(netResult.toString() == errorNetResult.toString())
+        assertEquals(netResult.toString(), errorNetResult.toString())
     }
 }
 
